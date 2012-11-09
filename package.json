@@ -1,0 +1,25 @@
+{
+  "name": "js-paint",
+  "version": "0.0.0",
+  "homepage": "https://github.com/dominictarr/js-paint",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dominictarr/js-paint.git"
+  },
+  "dependencies": {
+    "el-streamo": "~0.0.2",
+    "monotonic-timestamp": "~0.0.7",
+    "repred": "~0.1.0",
+    "reloader": "~1.0.2",
+    "reconnect": "~0.1.4",
+    "shoe": "0.0.7",
+    "client-reloader": "~1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "set -e; for t in test/*.js; do node $t; done",
+    "build": "browserify client.js -o static/bundle.js --debug"
+  },
+  "author": "'Dominic Tarr' <dominic.tarr@gmail.com> (http://dominictarr.com)",
+  "license": "MIT"
+}
